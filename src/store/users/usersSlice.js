@@ -1,13 +1,15 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  booksList,
+  users:[],
+	isLoading: true,
+	error: undefined
 };
 
-const bookSlice = createSlice({
+const usersSlice = createSlice({
   name: 'users',
   initialState,
-
+  extraReducers:{}
 });
 
 export default usersSlice.reducer;
